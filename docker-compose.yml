@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+       mongo_db:
+         image: mongo:latest
+         restart: always
+         volumes:
+            - mongo_db:/System/Volumes/Data/data/db
+
+       todo:
+          build: .
+          ports:
+             - 3004:3004
+          environment:
+             PORT: 3004
+             MONGODB_URI: mongodb://mongo_db:27017/Listdb
+          depends_on: 
+             - mongo_db
+
+volumes:
+   mongo_db: {}
+
+
+
+
+
