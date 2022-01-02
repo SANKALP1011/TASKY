@@ -3,7 +3,7 @@
 - Powerfull todolist app using mongo atlas server for the database and deployed on AWS.\
 -Deployed on heroku.\
 -Dokerised application.\
--Link for the site -  https://todooy.herokuapp.com/
+>Live preview -  https://todooy.herokuapp.com/
 
 - For backend , I have used -:
 > Node.js , Express.js , Mongdb
